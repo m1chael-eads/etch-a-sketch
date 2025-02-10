@@ -51,6 +51,13 @@ function getDimension() {
     return dimension;
 }
 
-createGrid(100);
+function main() {
+    if (currentDimension > 0) {
+        deleteGrid();
+    }
+    dimension = getDimension();
+    createGrid(dimension);
+}
+
 
 
