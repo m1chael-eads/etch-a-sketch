@@ -46,9 +46,15 @@ function randomColor() {
 }
 
 function getDimension() {
-    let dimension = prompt("Choose your grid dimension");
-    dimension = Number(dimension);
-    return dimension;
+    while (true) {
+        let dimension = prompt("Choose your grid dimension");
+        if (typeof num) {
+            dimension = Number(dimension);
+            if (dimension <= 100) {
+                return dimension;
+            }
+        }
+    }
 }
 
 function main() {
